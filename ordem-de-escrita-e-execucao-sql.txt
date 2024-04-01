@@ -1,0 +1,17 @@
+Ordem de Escrita
+
+A ordem de escrita dos comandos SQL é definida para facilitar a compreensão e a leitura da consulta pelo desenvolvedor.
+Ela segue uma lógica estruturada que normalmente começa com a seleção dos dados (SELECT), seguida pela identificação
+da fonte dos dados (FROM), aplicação de filtros (WHERE), agrupamento de dados (GROUP BY), aplicação de condições de grupo (HAVING),
+ordenação dos resultados (ORDER BY), e, opcionalmente, limitação do número de resultados (LIMIT / OFFSET).
+Essa ordem é uma convenção e ajuda a organizar a lógica da consulta de forma compreensível para os humanos.
+
+
+Ordem de Execução
+
+A ordem de execução, por outro lado, reflete como o SGBD processa efetivamente a consulta para obter os resultados desejados.
+O SGBD precisa seguir uma ordem específica para garantir que os resultados sejam precisos e eficientes. Isso envolve acessar
+a fonte de dados especificada (FROM), aplicar os filtros (WHERE), agrupar os dados (GROUP BY), aplicar condições de grupo (HAVING),
+selecionar as colunas desejadas (SELECT), ordenar os resultados (ORDER BY) e, finalmente, limitar o número de resultados,
+se necessário (LIMIT / OFFSET). Essa ordem de execução é determinada pelo otimizador de consultas do SGBD e pode ser influenciada
+por índices, estatísticas de tabela e outras considerações de desempenho.
